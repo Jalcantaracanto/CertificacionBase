@@ -56,9 +56,11 @@ class DetailFragment : Fragment() {
             binding.btnPrimary.setOnClickListener {
                 if (isVisible) {
                     binding.btnSendMail.visibility = View.GONE
+                    binding.txtSendMail.visibility = View.GONE
                     isVisible = false
                 } else {
                     binding.btnSendMail.visibility = View.VISIBLE
+                    binding.txtSendMail.visibility = View.VISIBLE
                     isVisible = true
                 }
             }
