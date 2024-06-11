@@ -7,24 +7,61 @@
     tools:context=".presentation.view.fragment.DetailFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/first_floating"
+        android:id="@+id/btn_send_mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/second_floating"
-        app:layout_constraintEnd_toEndOf="@+id/second_floating"
-        app:layout_constraintStart_toStartOf="@+id/second_floating" />
+        android:src="@drawable/baseline_email_24"
+        app:maxImageSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_primary"
+        app:layout_constraintEnd_toEndOf="@+id/btn_primary"
+        app:layout_constraintStart_toStartOf="@+id/btn_primary" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/second_floating"
+        android:id="@+id/btn_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_24"
+        app:maxImageSize="30dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95" />
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_avatar" />
+
+    <TextView
+        android:id="@+id/txt_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

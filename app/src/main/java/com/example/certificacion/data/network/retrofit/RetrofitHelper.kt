@@ -5,10 +5,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitHelper {
-    fun getRetrofit(context: Context): Retrofit {
+    fun getRetrofit(): Retrofit {
 
         return Retrofit.Builder()
-            .baseUrl("HTTPS ALGO")
+            .baseUrl("https://thesimpsonsquoteapi.glitch.me/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
